@@ -1,0 +1,46 @@
+<!--
+<div *ngFor="let t of types | async" class="card" style="width: 18rem;">
+  <img [src]="t.value.url" class="card-img-top" alt="..." />
+  <div class="card-body">
+    <h5 class="card-title">{{ t.value.name }}</h5>
+    <p class="card-text">
+      {{ t.value.description }}
+    </p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Dito!</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+-->
+
+<div class="row">
+  <ng-container *ngFor="let t of types | async; let i = index">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img [src]="t.value.url" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{ t.value.name }}</h5>
+          <p class="card-text">
+            {{ t.value.description }}
+          </p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Dito!</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="(i + 1) % 4 === 0" class="w-100"></div>
+  </ng-container>
+</div>

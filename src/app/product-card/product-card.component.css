@@ -1,0 +1,12 @@
+.btn.btn-light {
+  background-color: rgb(241, 202, 215, 0.5);
+  color: black;
+  border: rgb(201, 83, 122);
+}
+.card-footer {
+  padding: 0;
+}
+
+.card-footer button {
+  cursor: pointer;
+}

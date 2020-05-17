@@ -1,0 +1,8 @@
+.sticky-top {
+  top: 80px;
+}
+.list-group .active {
+  background-color: rgb(241, 202, 215);
+  color: black;
+  border: rgb(201, 83, 122);
+}
