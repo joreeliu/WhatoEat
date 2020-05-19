@@ -19,6 +19,9 @@ export class TypeCardComponent {
         }));
       })
     );
-    console.log(this.types);
+    //console.log(this.types);
+  }
+  selectType(type) {
+    console.log(type);
   }
 }

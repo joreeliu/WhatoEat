@@ -1,7 +1,6 @@
 .btn.btn-light {
-  background-color: rgb(241, 202, 215, 0.5);
-  color: black;
-  border: rgb(201, 83, 122);
+  background-color: #a1c21f9c;
+  color: white;
 }
 .card-footer {
   padding: 0;
@@ -9,4 +8,12 @@
 
 .card-footer button {
   cursor: pointer;
+}
+.card-img {
+  width: 100%;
+  height: 8vw;
+  object-fit: cover;
+}
+.card {
+  padding: 5%;
 }

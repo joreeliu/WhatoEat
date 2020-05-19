@@ -1,0 +1,42 @@
+.card-img-top {
+  width: 100%;
+  height: 20vw;
+  object-fit: cover;
+}
+.w-100 {
+  height: 20px;
+}
+.card-title {
+  margin-top: 50px;
+  text-align: center;
+  height: 50px;
+}
+.card-text {
+  text-align: center;
+  height: 100px;
+  color: #545454;
+  font-size: 15px;
+}
+.btn {
+  background-color: #7d990c;
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 120px;
+  color: white;
+}
+.btn:hover {
+  background-color: #f2bf5e;
+}
+.card-note {
+  text-align: center;
+  color: black;
+  font-size: medium;
+  height: 50px;
+}
+.card-link {
+  color: black;
+  font-size: small;
+}
