@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./type-card.component.css'],
 })
 export class TypeCardComponent {
-  types = [];
+  types: any = [];
 
   constructor(typesService: TypesService) {
     this.types = typesService.getTypes().pipe(

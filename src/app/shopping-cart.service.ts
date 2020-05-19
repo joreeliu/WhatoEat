@@ -18,7 +18,7 @@ export class ShoppingCartService {
     return this.db
       .object('/shopping-carts/' + cartId)
       .valueChanges()
-      .pipe(map((x) => new ShoppingCart(x.items)));
+      .pipe(map((x: any) => new ShoppingCart(x.items)));
   }
 
   async addToCart(product: Product) {
@@ -59,7 +59,7 @@ export class ShoppingCartService {
     item$
       .valueChanges()
       .pipe(take(1))
-      .subscribe((item) => {
+      .subscribe((item: any) => {
         if (item) {
           let quantity = item.quantity + change;
           console.log(quantity);
